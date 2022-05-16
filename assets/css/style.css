@@ -1,0 +1,283 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Google Fonts */
+
+/* Reset Codes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+/* Reset Codes */
+
+/* Background Image */
+body {
+  background: url(../images/bg.webp);
+  object-fit: cover;
+}
+/* Background Image */
+
+/* Header Style */
+#header {
+  width: 100%;
+  height: 100px;
+  background: #8d78d5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+}
+/* Header Style */
+
+/* Logo */
+.navbar h2 {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  color: #ffffff;
+}
+.navbar h2:hover {
+  transform: scale(1.5);
+  color: purple;
+}
+/* Logo */
+
+/* Social Icons Default Style */
+#icon {
+  font-size: 24px;
+  margin-right: 15px;
+  transition: 0.4s ease-in-out;
+}
+/* Social Icons Default Style */
+
+/* Social Icons Colors */
+
+.fa-whatsapp {
+  color: #ffffff;
+}
+.fa-whatsapp:hover {
+  color: #01b821;
+  transform: scale(1.5);
+}
+.fa-instagram {
+  color: #ffffff;
+}
+.fa-instagram:hover {
+  color: #e8485b;
+  transform: scale(1.5);
+}
+.fa-telegram {
+  color: #ffffff;
+}
+.fa-telegram:hover {
+  color: #2b9dd5;
+  transform: scale(1.5);
+}
+.fa-youtube {
+  color: #ffffff;
+}
+.fa-youtube:hover {
+  color: #ff0000;
+  transform: scale(1.5);
+}
+.fa-linkedin {
+  color: #ffffff;
+}
+.fa-linkedin:hover {
+  color: #0a66c2;
+  transform: scale(1.5);
+}
+.fa-twitter {
+  color: #ffffff;
+}
+.fa-twitter:hover {
+  color: #1c96e8;
+  transform: scale(1.5);
+}
+.fa-github {
+  color: #ffffff;
+}
+.fa-github:hover {
+  color: #161b22;
+  transform: scale(1.5);
+}
+.fa-facebook {
+  color: #ffffff;
+}
+.fa-facebook:hover {
+  color: #14a1fa;
+  transform: scale(1.5);
+}
+
+/* Social Icons Colors */
+
+/* Container */
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+/* Container */
+
+/* ------------------------------ TASKS SECTION ----------------------------- */
+#tasks {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* About Title */
+.about h1 {
+  text-align: center;
+  margin: 20px 0;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* About Title */
+
+/* TASK BOX */
+.task_box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px dotted #818181;
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 10px;
+  position: relative;
+}
+.task_box p {
+  font-size: 14px;
+  font-weight: 600;
+}
+/* TASK BOX */
+
+/* Modal Image */
+
+.solutions {
+  display: none;
+  position: absolute;
+  top: -125px;
+  left: 10%;
+  z-index: 5;
+}
+.solutions img {
+  width: 800px;
+  border-radius: 10px;
+}
+.closeAnsw {
+  position: absolute;
+  right: -50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #14a1fa;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.answImg {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: #14a1fa;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.answImg:hover {
+  background: #8d78d5;
+  color: #000000;
+}
+/* Modal Image */
+
+/* Input Style */
+.inp {
+  width: 250px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #14a1fa;
+}
+/* Input Style */
+
+/* Input Submit Style */
+.inpSub {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: #14a1fa;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.inpSub:hover {
+  background: #8d78d5;
+  color: #000000;
+}
+/* Input Submit Style */
+
+/* Button Style */
+.btn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: #14a1fa;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn:hover {
+  background: #8d78d5;
+  color: #000000;
+}
+/* Button Style */
+
+/* Red Box */
+.redBox {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 5px;
+}
+/* Red Box */
+
+/* Task 6, 13 Image */
+#task7Img,
+#task13Img {
+  width: 200px;
+}
+/* Task 6 Image */
+
+/* Button Group Task 25*/
+.btnGroup {
+  width: 400px;
+  display: flex;
+}
+.btn_1 {
+  margin-bottom: 5px;
+}
+/* Button Group Task 25 */
+
+/* ------------------------------ TASKS SECTION ----------------------------- */

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Java Script | DOM</title>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header id="header">
+      <!-- Start Logo -->
+      <div class="navbar">
+        <h2>Hazırladı: Tərlan Əlicanov</h2>
+      </div>
+      <!-- End Logo -->
+      <!-- Start Social Bar -->
+      <nav id="social">
+        <a href="https://github.com/alidjanoff" target="_blank"
+          ><i id="icon" class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/teo_alidjanoff/" target="_blank"
+          ><i id="icon" class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/Teo.Alidjanoff/" target="_blank"
+          ><i id="icon" class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://wa.me/+994552826674" target="_blank"
+          ><i id="icon" class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://t.me/teo_alidjanoff" target="_blank"
+          ><i id="icon" class="fa-brands fa-telegram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/t%C9%99rlan-%C9%99licanov-7409b2161/"
+          target="_blank"
+          ><i id="icon" class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://twitter.com/alidjanoff" target="_blank"
+          ><i id="icon" class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCdCUkxUQ5_m_-umfRJmD_AA"
+          target="_blank"
+          ><i id="icon" class="fa-brands fa-youtube"></i
+        ></a>
+      </nav>
+      <!-- End Social Bar -->
+    </header>
+    <!-- End Header -->
+    <div class="container">
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                           START TASK SECTION                            -->
+      <!-- ----------------------------------------------------------------------- -->
+      <section id="tasks">
+        <!-- START Task About -->
+        <div class="about">
+          <h1>Java Script - də DOM elementləri üzərində tapşırıqlar</h1>
+        </div>
+        <!-- END Task About -->
+        <!-- START Task 1 -->
+        <div class="task_box">
+          <h3>Tapşırıq 1:</h3>
+          <p>Button-a click etdikdə, xəbərdarlıq(bildiriş) görsənsin.</p>
+          <button class="btn" id="btn1">Bildiriş</button>
+          <button class="answImg" id="answImg1">Cavab</button>
+          <div class="solutions" id="solutions1">
+            <span id="closeAnsw1" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task1.png" alt="task1_answear" />
+          </div>
+        </div>
+        <!-- END Task 1 -->
+        <!-- START Task 2 -->
+        <div class="task_box">
+          <h3>Tapşırıq 2:</h3>
+          <p>
+            Button-un üzərinə mouse-u gətirdikdə, xəbərdarlıq(bildiriş)
+            görsənsin.
+          </p>
+          <button class="btn" id="btn2">Üzərinə</button>
+          <button class="answImg" id="answImg2">Cavab</button>
+          <div id="solutions2" class="solutions">
+            <span id="closeAnsw2" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task2.png" alt="task2_answear" />
+          </div>
+        </div>
+        <!-- END Task 2 -->
+        <!-- START Task 3 -->
+        <div class="task_box">
+          <h3>Tapşırıq 3:</h3>
+          <p>
+            Button-a ardıcıl iki dəfə click etdikdə, xəbərdarlıq(bildiriş)
+            görsənsin.
+          </p>
+          <button class="btn" id="btn3">İki dəfə</button>
+          <button class="answImg" id="answImg3">Cavab</button>
+          <div id="solutions3" class="solutions">
+            <span id="closeAnsw3" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task3.png" alt="task3_answear" />
+          </div>
+        </div>
+        <!-- END Task 3 -->
+        <!-- START Task 4 -->
+        <div class="task_box">
+          <h3>Tapşırıq 4:</h3>
+          <p>
+            Mouse qırmızı qutunun içərisindən çıxdıqda, xəbərdarlıq(bildiriş)
+            görsənsin.
+          </p>
+          <div class="redBox"></div>
+          <button class="answImg" id="answImg4">Cavab</button>
+          <div id="solutions4" class="solutions">
+            <span id="closeAnsw4" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task4.png" alt="task4_answear" />
+          </div>
+        </div>
+        <!-- END Task 4 -->
+        <!-- START Task 5 -->
+        <div class="task_box">
+          <h3>Tapşırıq 5:</h3>
+          <p>
+            İnputdan daxil edilən söz(rəqəm), button-a click etdikdə
+            xəbərdarlıq(bildiriş) kimi görsənsin.
+          </p>
+          <input
+            type="text"
+            class="inp"
+            placeholder="İstənilən ifadəni yazın:"
+            id="task5"
+          />
+          <button class="btn" id="btn5">Nəticə</button>
+          <button class="answImg" id="answImg5">Cavab</button>
+          <div id="solutions5" class="solutions">
+            <span id="closeAnsw5" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task5.png" alt="task5_answear" />
+          </div>
+        </div>
+        <!-- END Task 5 -->
+        <!-- START Task 6 -->
+        <div class="task_box">
+          <h3>Tapşırıq 6:</h3>
+          <p>Button-a click etdikdə, input-un içindəki yazı dəyişsin.</p>
+          <input type="text" class="inp" value="Button-a click et" id="task6" />
+          <button class="btn" id="btn6">Nəticə</button>
+          <button class="answImg" id="answImg6">Cavab</button>
+          <div id="solutions6" class="solutions">
+            <span id="closeAnsw6" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task6.png" alt="task6_answear" />
+          </div>
+        </div>
+        <!-- END Task 6 -->
+        <!-- START Task 7 -->
+        <div class="task_box">
+          <h3>Tapşırıq 7:</h3>
+          <p>Button-a click etdikdə şəkil dəyişsin.</p>
+          <img id="task7Img" src="./assets/images/1.jpg" alt="task7_img" />
+          <button class="btn" id="btn7">Dəyiş</button>
+          <button class="answImg" id="answImg7">Cavab</button>
+          <div id="solutions7" class="solutions">
+            <span id="closeAnsw7" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task7.png" alt="task7_answear" />
+          </div>
+        </div>
+        <!-- END Task 7 -->
+        <!-- START Task 8 -->
+        <div class="task_box">
+          <h3>Tapşırıq 8:</h3>
+          <p>
+            İnput-a click etdikdə, içindəki yazı xəbərdarlıq(bildiriş) kimi
+            görsənsin.
+          </p>
+          <input type="text" class="inp" value="Buraya click-et" id="task8" />
+          <button class="answImg" id="answImg8">Cavab</button>
+          <div id="solutions8" class="solutions">
+            <span id="closeAnsw8" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task8.png" alt="task8_answear" />
+          </div>
+        </div>
+        <!-- END Task 8 -->
+        <!-- START Task 9 -->
+        <div class="task_box">
+          <h3>Tapşırıq 9:</h3>
+          <p>İnput-a click etdikdə, içindəki yazı dəyişsin.</p>
+          <input type="text" class="inp" value="Buraya click-et" id="task9" />
+          <button class="answImg" id="answImg9">Cavab</button>
+          <div id="solutions9" class="solutions">
+            <span id="closeAnsw9" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task9.png" alt="task9_answear" />
+          </div>
+        </div>
+        <!-- END Task 9 -->
+        <!-- START Task 10 -->
+        <div class="task_box">
+          <h3>Tapşırıq 10:</h3>
+          <p>
+            İnput-a click etdikdə, içindəki yazı dəyişsin. İnput-un xaricinə
+            click etdikdə yazı əvvəlki vəziyyətinə qayıtsın.
+          </p>
+          <input type="text" class="inp" value="Buraya click-et" id="task10" />
+          <button class="answImg" id="answImg10">Cavab</button>
+          <div id="solutions10" class="solutions">
+            <span id="closeAnsw10" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task10.png" alt="task10_answear" />
+          </div>
+        </div>
+        <!-- END Task 10 -->
+        <!-- Start Task 11 -->
+        <div class="task_box">
+          <h3>Tapşırıq 11:</h3>
+          <p>
+            Bu input-a click etdikdə, içindəki yazı dəyişsin. (Qeyd: İnput-un
+            type-ı "submit"-dir)
+          </p>
+          <input type="submit" value="Buraya" class="inpSub" id="task11" />
+          <button class="answImg" id="answImg11">Cavab</button>
+          <div id="solutions11" class="solutions">
+            <span id="closeAnsw11" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task11.png" alt="task11_answear" />
+          </div>
+        </div>
+        <!-- End Task 11 -->
+        <!-- Start Task 12 -->
+        <div class="task_box">
+          <h3>Tapşırıq 12:</h3>
+          <p>
+            Bu input-a click etdikdə qeyri-aktiv olsun. (Qeyd: İnput-un type-ı
+            "submit"-dir)
+          </p>
+          <input
+            type="submit"
+            value="Buraya"
+            id="task12"
+            style="
+              width: 200px;
+              height: 40px;
+              border: 0.5px solid;
+              border-radius: 10px;
+            "
+          />
+          <button class="answImg" id="answImg12">Cavab</button>
+          <div id="solutions12" class="solutions">
+            <span id="closeAnsw12" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task12.png" alt="task12_answear" />
+          </div>
+        </div>
+        <!-- End Task 12 -->
+        <!-- START Task 13 -->
+        <div class="task_box">
+          <h3>Tapşırıq 13:</h3>
+          <p>
+            Mouse şəklin üzərinə gəldikdə şəkil dəyişsin, çıxdıqda isə əvvəlki
+            vəziyyətinə qayıtsın.
+          </p>
+          <img id="task13Img" src="./assets/images/1.jpg" alt="task13_img" />
+          <button class="answImg" id="answImg13">Cavab</button>
+          <div id="solutions13" class="solutions">
+            <span id="closeAnsw13" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task13.png" alt="task13_answear" />
+          </div>
+        </div>
+        <!-- END Task 13 -->
+        <!-- START Task 14 -->
+        <div class="task_box">
+          <h3>Tapşırıq 14:</h3>
+          <p>
+            Button-a click etdikdə, input-un içindəki yazının rəngi və input-un
+            ölçüsü dəyişsin.
+          </p>
+          <input type="text" class="inp" value="Bu nə rəngdir ?" id="task14" />
+          <button class="btn" id="btn14">Dəyiş</button>
+          <button class="answImg" id="answImg14">Cavab</button>
+          <div id="solutions14" class="solutions">
+            <span id="closeAnsw14" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task14.png" alt="task14_answear" />
+          </div>
+        </div>
+        <!-- END Task 14 -->
+        <!-- START Task 15 -->
+        <div class="task_box">
+          <h3>Tapşırıq 15:</h3>
+          <p>
+            Gizlət button-na click etdikdə, input gizlənsin. Göstər button-na
+            click etdikdə isə görsənsin.
+          </p>
+          <input
+            type="text"
+            class="inp"
+            value="Button-lara click et"
+            id="task15"
+          />
+          <button class="btn" id="btn15Off">Gizlət</button>
+          <button class="btn" id="btn15On">Göstər</button>
+          <button class="answImg" id="answImg15">Cavab</button>
+          <div id="solutions15" class="solutions">
+            <span id="closeAnsw15" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task15.png" alt="task15_answear" />
+          </div>
+        </div>
+        <!-- END Task 15 -->
+        <!-- START Task 16 -->
+        <div class="task_box">
+          <h3>Tapşırıq 16:</h3>
+          <p>Button-a click etdikdə, input-un style-ı dəyişsin.</p>
+          <input type="text" class="inp" value="Buraya diqqət !" id="task16" />
+          <button class="btn" id="btn16">Dəyiş</button>
+          <button class="answImg" id="answImg16">Cavab</button>
+          <div id="solutions16" class="solutions">
+            <span id="closeAnsw16" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task16.png" alt="task16_answear" />
+          </div>
+        </div>
+        <!-- END Task 16 -->
+        <!-- Start Task 17 -->
+        <div class="task_box">
+          <h3>Tapşırıq 17:</h3>
+          <p>
+            Birinci input-a click etdikdə qeyri-aktiv olsun və aktiv et button-u
+            (Qeyd: İnput-un type-ı "submit"-dir)
+          </p>
+          <input
+            type="submit"
+            value="Deaktiv Et"
+            id="task17Off"
+            style="
+              width: 200px;
+              height: 40px;
+              border: 0.5px solid;
+              border-radius: 10px;
+            "
+          />
+          <input
+            type="submit"
+            value="Aktivləşdir"
+            id="task17On"
+            style="
+              width: 200px;
+              height: 40px;
+              border: 0.5px solid;
+              border-radius: 10px;
+            "
+          />
+          <button class="answImg" id="answImg17">Cavab</button>
+          <div id="solutions17" class="solutions">
+            <span id="closeAnsw17" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task17.png" alt="task17_answear" />
+          </div>
+        </div>
+        <!-- End Task 17 -->
+        <!-- START Task 18 -->
+        <div class="task_box">
+          <h3>Tapşırıq 18:</h3>
+          <p>Button-a click etdikdə, yazılan rəqəm 1 vahid artsın.</p>
+          <input
+            type="submit"
+            value="0"
+            id="task18"
+            style="
+              width: 200px;
+              height: 40px;
+              border: 0.5px solid;
+              border-radius: 10px;
+            "
+          />
+          <button class="answImg" id="answImg18">Cavab</button>
+          <div id="solutions18" class="solutions">
+            <span id="closeAnsw18" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task18.png" alt="task3_answear" />
+          </div>
+        </div>
+        <!-- END Task 18 -->
+        <!-- START Task 19 -->
+        <div class="task_box">
+          <h3>Tapşırıq 19:</h3>
+          <p>Button-a click etdikdə, input-la button yerini dəyişsin.</p>
+          <input
+            type="text"
+            class="inp"
+            value="İnput aşağı, button yuxarı"
+            id="task19"
+          />
+          <button class="btn" id="btn19">Dəyiş</button>
+          <button class="answImg" id="answImg19">Cavab</button>
+          <div id="solutions19" class="solutions">
+            <span id="closeAnsw19" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task19.png" alt="task19_answear" />
+          </div>
+        </div>
+        <!-- END Task 19 -->
+        <!-- START Task 20 -->
+        <div class="task_box">
+          <h3>Tapşırıq 20:</h3>
+          <p>
+            Button-a click etdikdə, button-un class name-i input-un içinə
+            yazılsın.
+          </p>
+          <input
+            type="text"
+            class="inp"
+            value="Class name-i burada yazılacaq"
+            id="task20"
+          />
+          <button class="btn" id="btn20">Göstər</button>
+          <button class="answImg" id="answImg20">Cavab</button>
+          <div id="solutions20" class="solutions">
+            <span id="closeAnsw20" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task20.png" alt="task20_answear" />
+          </div>
+        </div>
+        <!-- END Task 20 -->
+        <!-- START Task 21 -->
+        <div class="task_box">
+          <h3>Tapşırıq 21:</h3>
+          <p>
+            Button-a click etdikdə yuxarıdakı input-un value-si, aşağıdakı
+            input-un value-si ilə yer dəyişsin. İkinci dəfə click etdikdə
+            əvvəlki vəziyyətinə qayıtsın.
+          </p>
+          <input type="text" class="inp" value="Yuxarı" id="task21" />
+          <input type="text" class="inp" id="inp21" value="Aşağı" />
+          <button class="btn" id="btn21">Nəticə</button>
+          <button class="answImg" id="answImg21">Cavab</button>
+          <div id="solutions21" class="solutions">
+            <span id="closeAnsw21" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task21.png" alt="task21_answear" />
+          </div>
+        </div>
+        <!-- END Task 21 -->
+        <!-- START Task 22 -->
+        <div class="task_box">
+          <h3>Tapşırıq 22:</h3>
+          <p>
+            Button-a click etdikdə yuxarıdakı input-da yazılan rəqəmin kvadratı
+            aşağıdakı input-da görünməlidir. Əgər rəqəm daxil edilməyibsə, NaN
+            yazılsın. (Qeyd: İkinci input deaktiv olsun və birinci input-da
+            yazılan rəqəm silinsin.)
+          </p>
+          <input
+            type="text"
+            class="inp"
+            placeholder="Rəqəmi daxil edin:"
+            id="task22"
+          />
+          <input type="text" class="inp" id="answ22" />
+          <button class="btn" id="btn22">Nəticə</button>
+          <button class="answImg" id="answImg22">Cavab</button>
+          <div id="solutions22" class="solutions">
+            <span id="closeAnsw22" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task22.png" alt="task22_answear" />
+          </div>
+        </div>
+        <!-- END Task 22 -->
+        <!-- START Task 23 -->
+        <div class="task_box">
+          <h3>Tapşırıq 23:</h3>
+          <p>
+            Button-a click etdikdə yuxarıdakı input-da yazılan rəqəmin kvadratı
+            aşağıdakı input-da görünməlidir. Əgər rəqəm daxil edilməyibsə, səhv
+            oluğu bildirilməlidir.(Qeyd: İkinci input deaktiv olsun və birinci
+            input-da yazılan rəqəm silinsin.)
+          </p>
+          <input
+            type="text"
+            class="inp"
+            placeholder="Rəqəmi daxil edin:"
+            id="task23"
+          />
+          <input type="text" class="inp" id="answ23" />
+          <button class="btn" id="btn23">Nəticə</button>
+          <button class="answImg" id="answImg23">Cavab</button>
+          <div id="solutions23" class="solutions">
+            <span id="closeAnsw23" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task23.png" alt="task23_answear" />
+          </div>
+        </div>
+        <!-- END Task 23 -->
+        <!-- Start Task 24 -->
+        <div class="task_box">
+          <h3>Tapşırıq 24:</h3>
+          <p>Button-a click etdikdə qeyri-aktiv olsun və cursor dəyişsin.</p>
+          <button class="btn" style="cursor: pointer" id="btn24">
+            Click Et
+          </button>
+          <button class="answImg" id="answImg24">Cavab</button>
+          <div id="solutions24" class="solutions">
+            <span id="closeAnsw24" class="closeAnsw"
+              ><i class="fa-solid fa-x"></i
+            ></span>
+            <img src="./assets/images/task24.png" alt="task24_answear" />
+          </div>
+        </div>
+        <!-- END Task 24 -->
+      </section>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                            END TASK SECTION                             -->
+      <!-- ----------------------------------------------------------------------- -->
+    </div>
+    <!-- Start FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/66f8655eb0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End FontAwesome -->
+    <!-- Start Main js -->
+    <script src="./assets/js/main.js"></script>
+    <!-- End Main js -->
+    <!-- Start my basic modal :) -->
+    <script src="./assets/js/modal.js"></script>
+    <!-- End my basic modal :) -->
+  </body>
+</html>
